@@ -1,0 +1,9 @@
+.env
+.env.*
+!.env.example
+node_modules/
+*.log
+*.xlsx
+*.zip
+output/
+tmp/

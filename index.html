@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="编制项目工作计划、安排月度任务和人员投入，并导出 Excel。">
+  <title>工作计划编制 · Work Schedule</title>
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./plan.css">
+  <link rel="stylesheet" href="./plan-wizard.css">
+  <link rel="stylesheet" href="./plan-editing.css">
+  <link rel="stylesheet" href="./plan-ai-effort.css">
+  <script defer src="./plan-app.js"></script>
+  <script defer src="./vendor/jszip.min.js"></script>
+  <script defer src="./plan-reference.js"></script>
+  <script defer src="./plan-framework.js"></script>
+  <script defer src="./plan-engine.js"></script>
+  <script defer src="./plan-formulas.js"></script>
+  <script defer src="./plan-export.js"></script>
+  <script defer src="./plan-builder.js"></script>
+  <script defer src="./plan-scheduling.js"></script>
+  <script defer src="./plan-staffing.js"></script>
+  <script defer src="./plan-ai-effort.js"></script>
+  <script defer src="./plan-editing.js"></script>
+  <script defer src="./plan-previews.js"></script>
+  <script defer src="./plan-materials.js"></script>
+  <script defer src="./plan-adaptation.js"></script>
+  <script defer src="./plan-recommendations.js"></script>
+  <script defer src="./plan-recommendation-ui.js"></script>
+  <script defer src="./plan-scheduling-ui.js"></script>
+  <script defer src="./plan-ai-effort-ui.js"></script>
+  <script defer src="./plan-ui.js"></script>
+</head>
+<body class="plan-mode">
+  <header class="topbar">
+    <div class="breadcrumb">
+      <i class="tool-icon" data-icon="calendar" aria-hidden="true"></i>
+      <strong>工作计划编制</strong>
+    </div>
+  </header>
+  <main id="main" tabindex="-1">
+    <noscript>启用 JavaScript 后即可编制工作计划。</noscript>
+  </main>
+  <dialog id="workspace-dialog" aria-labelledby="dialog-title">
+    <div id="dialog-content"></div>
+  </dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
