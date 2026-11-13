@@ -5,11 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="编制项目工作计划、安排月度任务和人员投入，并导出 Excel。">
   <title>工作计划编制 · Work Schedule</title>
-  <link rel="stylesheet" href="./styles.css">
-  <link rel="stylesheet" href="./plan.css">
-  <link rel="stylesheet" href="./plan-wizard.css">
-  <link rel="stylesheet" href="./plan-editing.css">
-  <link rel="stylesheet" href="./plan-ai-effort.css">
+  <link rel="stylesheet" href="./workbench.css">
   <script defer src="./plan-app.js"></script>
   <script defer src="./vendor/jszip.min.js"></script>
   <script defer src="./plan-reference.js"></script>
@@ -32,11 +28,13 @@
   <script defer src="./plan-ui.js"></script>
 </head>
 <body class="plan-mode">
+  <a class="skip-link" href="#main">跳到主要内容</a>
   <header class="topbar">
     <div class="breadcrumb">
       <i class="tool-icon" data-icon="calendar" aria-hidden="true"></i>
-      <strong>工作计划编制</strong>
+      <span><strong>工作计划编制</strong><small>从项目资料到原计划月历</small></span>
     </div>
+    <div class="topbar-status"><span>本地工作台</span><strong>自动保存</strong></div>
   </header>
   <main id="main" tabindex="-1">
     <noscript>启用 JavaScript 后即可编制工作计划。</noscript>
